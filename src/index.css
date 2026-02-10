@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: theme('fontFamily.body');
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: theme('colors.slate.100');
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-slate-100 text-slate-900;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen bg-gradient-to-b from-slate-100 via-slate-100 to-slate-200 px-2 py-2 md:px-0 md:py-6 lg:px-0 lg:py-10;
+  }
+
+  .menu-card {
+    @apply relative mx-auto flex min-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-none bg-white shadow-soft-card md:min-h-[80vh] md:max-w-none lg:max-w-none;
+  }
+
+  .full-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+

@@ -1,0 +1,5 @@
+/* Hoja de estilos intencionalmente ligera.
+   El diseño principal del menú se maneja con Tailwind en los componentes
+   y en `index.css`. Esta hoja existe solo para satisfacer el import en `App.tsx`
+   y facilitar futuros estilos globales específicos de App si los necesitas. */
+
