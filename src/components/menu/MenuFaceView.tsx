@@ -1,9 +1,10 @@
-import type { MenuFace } from '../../types/menu'
+import type { MenuFace, MenuItem } from '../../types/menu'
 import { MenuSection } from './MenuSection'
 import { CoverCarousel } from './CoverCarousel'
 
 type MenuFaceViewProps = {
   face: MenuFace
+  onItemClick?: (item: MenuItem, imageFolder?: string) => void
 }
 
 /**
@@ -12,7 +13,7 @@ type MenuFaceViewProps = {
  * A futuro se puede reutilizar este componente como pantalla
  * independiente en una aplicación web o móvil.
  */
-export function MenuFaceView({ face }: MenuFaceViewProps) {
+export function MenuFaceView({ face, onItemClick }: MenuFaceViewProps) {
   if (face.isCover) {
     return (
       <div className="space-y-6 lg:space-y-8">
@@ -97,7 +98,12 @@ export function MenuFaceView({ face }: MenuFaceViewProps) {
 
       <div className="space-y-6 md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
         {face.sections.map((section) => (
-          <MenuSection key={section.id} section={section} />
+          <MenuSection
+            key={section.id}
+            section={section}
+            imageFolder={face.imageFolder}
+            onItemClick={onItemClick}
+          />
         ))}
       </div>
     </div>

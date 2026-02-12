@@ -1,8 +1,10 @@
-import type { MenuSection as MenuSectionType } from '../../types/menu'
+import type { MenuSection as MenuSectionType, MenuItem } from '../../types/menu'
 import { MenuItemCard } from './MenuItemCard'
 
 type MenuSectionProps = {
   section: MenuSectionType
+  imageFolder?: string
+  onItemClick?: (item: MenuItem, imageFolder?: string) => void
 }
 
 const accentClasses: Record<
@@ -18,7 +20,7 @@ const accentClasses: Record<
   food: 'bg-accent-food/10 text-accent-food border-accent-food/30',
 }
 
-export function MenuSection({ section }: MenuSectionProps) {
+export function MenuSection({ section, imageFolder, onItemClick }: MenuSectionProps) {
   const pillClassName = section.accent
     ? accentClasses[section.accent]
     : 'bg-slate-100 text-slate-500 border-slate-200'
@@ -40,7 +42,12 @@ export function MenuSection({ section }: MenuSectionProps) {
 
       <div className="space-y-3">
         {section.items.map((item) => (
-          <MenuItemCard key={item.id} item={item} />
+          <MenuItemCard
+            key={item.id}
+            item={item}
+            imageFolder={imageFolder}
+            onItemClick={onItemClick}
+          />
         ))}
       </div>
     </section>

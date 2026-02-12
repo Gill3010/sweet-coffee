@@ -38,6 +38,8 @@ export type MenuFace = {
   coverHighlights?: string[]
   /** Claves para las imágenes del carrusel de portada (se mapearán a rutas reales). */
   coverCarouselImageKeys?: string[]
+  /** Subcarpeta dentro de `public/menu/` donde viven las imágenes de los ítems. Ej: postres, bebidas-calientes. */
+  imageFolder?: string
   /** Cada cara puede tener 1 o varias secciones internas. */
   sections: MenuSection[]
 }
