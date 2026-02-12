@@ -8,8 +8,8 @@ export const postres: MenuFace = {
   subtitle: 'Fresas, frappés y otros postres para acompañar tu café.',
   sections: [
     {
-      id: 'fresas-cremas',
-      title: 'Fresas con crema',
+      id: 'fresas',
+      title: 'Fresas',
       subtitle: 'La base de nuestros postres',
       accent: 'dessert',
       items: [
@@ -36,7 +36,7 @@ export const postres: MenuFace = {
         },
         {
           id: 'fresas-beileys',
-          name: 'Fresas con chocolcate',
+          name: 'Fresas con chocolate',
           description: 'Fresas frescas con frambuesa, perfectas para compartir.',
           imageKey: 'fresas-beileys',
           variants: [{ price: 65 }],
@@ -60,6 +60,54 @@ export const postres: MenuFace = {
           name: 'Frappé de Oreo',
           imageKey: 'frappe-oreo',
           variants: [{ price: 69 }],
+        },
+      ],
+    },
+    {
+      id: 'chocolates',
+      title: 'Chocolates',
+      subtitle: 'Para los amantes del cacao',
+      accent: 'dessert',
+      items: [
+        {
+          id: 'chocolate-malva',
+          name: 'Chocolate con malva',
+          imageKey: 'chocolate-malva',
+          variants: [{ price: 65 }],
+        },
+        {
+          id: 'chocolate',
+          name: 'Chocolate',
+          imageKey: 'chocolate',
+          variants: [{ price: 65 }],
+        },
+      ],
+    },
+    {
+      id: 'dulces',
+      title: 'Dulces',
+      subtitle: 'Postres dulces y tentadores',
+      accent: 'dessert',
+      items: [
+        {
+          id: 'bizcocho-helado',
+          name: 'Bizcocho con helado',
+          imageKey: 'bizcocho-helado',
+          variants: [{ price: 65 }],
+        },
+      ],
+    },
+    {
+      id: 'batidos',
+      title: 'Batidos',
+      subtitle: 'Cremosos y refrescantes',
+      accent: 'dessert',
+      items: [
+        {
+          id: 'batido-fresa',
+          name: 'Batido de fresa',
+          imageKey: 'batido-fresa',
+          variants: [{ price: 65 }],
         },
       ],
     },

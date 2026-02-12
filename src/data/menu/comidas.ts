@@ -13,15 +13,17 @@ export const comidas: MenuFace = {
       accent: 'food',
       items: [
         {
-          id: 'hamburguesa-clasica',
-          name: 'Hamburguesa clásica',
+          id: 'mini-comando',
+          name: 'Mini comando',
           description: 'Carne de res, queso, lechuga, tomate y aderezo.',
+          imageKey: 'mini-comando',
           variants: [{ price: 95 }],
         },
         {
-          id: 'hamburguesa-bbq',
+          id: 'hamburguesa-pollo',
           name: 'Hamburguesa BBQ',
           description: 'Con cebolla caramelizada y salsa BBQ.',
+          imageKey: 'hamburguesa-pollo',
           variants: [{ price: 105 }],
         },
       ],
@@ -34,6 +36,7 @@ export const comidas: MenuFace = {
         {
           id: 'panini-pollo',
           name: 'Panini de pollo',
+          imageKey: 'panini-pollo',
           variants: [{ price: 90 }],
         },
         {

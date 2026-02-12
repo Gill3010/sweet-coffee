@@ -96,7 +96,7 @@ export function MenuFaceView({ face, onItemClick }: MenuFaceViewProps) {
         )}
       </header>
 
-      <div className="space-y-6 md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
+      <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:items-start md:gap-6 lg:gap-8">
         {face.sections.map((section) => (
           <MenuSection
             key={section.id}

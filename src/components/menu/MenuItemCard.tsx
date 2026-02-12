@@ -34,12 +34,12 @@ export function MenuItemCard({
           : undefined
       }
     >
-      <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-2xl bg-slate-200 md:h-20 md:w-20">
+      <div className="relative aspect-[3/4] w-20 flex-shrink-0 overflow-hidden rounded-2xl bg-slate-200 md:w-24 lg:w-28">
         {item.imageKey && imageFolder ? (
           <img
             src={`/menu/${imageFolder}/${item.imageKey}.jpg`}
             alt={item.name}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         ) : null}
       </div>
