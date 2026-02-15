@@ -55,24 +55,24 @@ export function ProductDetailModal({
         onClick={onClose}
       />
       <div
-        className="relative z-10 flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-soft-card"
+        className="relative z-10 flex max-h-[90vh] min-h-0 w-full max-w-md flex-col overflow-y-auto rounded-2xl bg-white shadow-soft-card"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative flex h-[50vh] min-h-[12rem] w-full flex-shrink-0 items-center justify-center overflow-hidden rounded-t-2xl bg-slate-200">
+        <div className="relative w-full flex-shrink-0 overflow-hidden rounded-t-2xl bg-slate-200">
           {imageSrc ? (
             <img
               src={imageSrc}
               alt={item.name}
-              className="h-full w-full object-contain object-center"
+              className="block w-full object-contain object-center"
             />
           ) : (
-            <div className="flex h-48 items-center justify-center md:h-56">
+            <div className="flex h-32 items-center justify-center">
               <span className="text-sm text-slate-500">Sin imagen</span>
             </div>
           )}
         </div>
 
-        <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4 md:p-5">
+        <div className="flex flex-1 flex-col gap-4 p-4 md:p-5">
           <div className="flex items-start justify-between gap-3">
             <h2
               id="product-modal-title"
