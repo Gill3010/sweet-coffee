@@ -53,11 +53,12 @@ function App() {
 
   return (
     <MenuShell
-      // Reemplaza este slot con tu logo real si lo deseas
       logoSlot={
-        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-xs font-semibold text-white">
-          SC
-        </div>
+        <img
+          src="/logo.png"
+          alt="Sweets & Coffee Boquete"
+          className="h-10 w-auto object-contain md:h-12"
+        />
       }
       headerTitle="Sweets & Coffee"
       headerSubtitle="Explora el menú por momentos: desliza las pestañas o toca para cambiar de cara."
