@@ -1,8 +1,9 @@
 export function formatCurrency(value?: number): string {
   if (value == null) return '—'
-  return new Intl.NumberFormat('es-MX', {
+  return new Intl.NumberFormat('es-PA', {
     style: 'currency',
-    currency: 'MXN',
-    maximumFractionDigits: 0,
+    currency: 'USD',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
   }).format(value)
 }

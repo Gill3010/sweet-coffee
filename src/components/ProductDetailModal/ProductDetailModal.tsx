@@ -58,12 +58,12 @@ export function ProductDetailModal({
         className="relative z-10 flex max-h-[90vh] w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-soft-card"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative h-[50vh] min-h-[12rem] w-full flex-shrink-0 overflow-hidden rounded-t-2xl bg-slate-200">
+        <div className="relative flex h-[50vh] min-h-[12rem] w-full flex-shrink-0 items-center justify-center overflow-hidden rounded-t-2xl bg-slate-200">
           {imageSrc ? (
             <img
               src={imageSrc}
               alt={item.name}
-              className="h-full w-full object-cover object-center"
+              className="h-full w-full object-contain object-center"
             />
           ) : (
             <div className="flex h-48 items-center justify-center md:h-56">

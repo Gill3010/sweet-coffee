@@ -105,5 +105,29 @@ export const comidas: MenuFace = {
         },
       ],
     },
+    {
+      id: 'plancha-ahumado',
+      title: 'A la plancha y ahumado a la leña',
+      accent: 'food',
+      items: [
+        {
+          id: 'pollo-plancha',
+          name: 'Pollo a la plancha',
+          description: 'Filete de pollo a la plancha, con su acompañamiento y ensalada verde.',
+          imageKey: 'pollo-plancha',
+          variants: [{ price: 95 }],
+        },
+        {
+          id: 'pollo-cerdo-ahumado',
+          name: 'Pollo o cerdo ahumado a la leña',
+          description: 'Orden de cerdo o pollo ahumado a la leña.',
+          imageKey: 'pollo-cerdo-ahumado',
+          variants: [
+            { label: 'Orden de cerdo', price: 6.95 },
+            { label: 'Orden de pollo', price: 7.25 },
+          ],
+        },
+      ],
+    },
   ],
 }
