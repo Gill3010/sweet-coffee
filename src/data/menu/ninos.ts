@@ -13,13 +13,17 @@ export const ninos: MenuFace = {
       accent: 'food',
       items: [
         {
-          id: 'mini-hamburguesa',
-          name: 'Mini hamburguesa',
+          id: 'deditos-pollo',
+          name: 'Deditos de pollo',
+          description: 'Deditos de pollo apanados con el acompañamiento de su gusto. El favorito de los pequeños de la casa.',
+          imageKey: 'mini-hamburguesa',
           variants: [{ price: 70 }],
         },
         {
-          id: 'dedos-pollo',
-          name: 'Dedos de pollo',
+          id: 'queso-burger',
+          name: 'Queso Burger',
+          description: 'Pan, queso americano, salsa de tomate y carne.',
+          imageKey: 'queso-burger',
           variants: [{ price: 72 }],
         },
       ],
